@@ -1,8 +1,10 @@
-name: Build Hugo website for production environment
+name: Build Hugo website for staging environment
 
 on:
+  push:
+    branches: [ develop ]
   pull_request:
-    branches: [ main ]
+    branches: [ develop ]
 
 jobs:
   build:
