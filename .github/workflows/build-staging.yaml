@@ -26,4 +26,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ghcr.io/${{ github.repository }}:${{ GITHUB_REF_NAME }}-${{ GITHUB_SHA }}-$(date +%s)
+        tags: ghcr.io/${{ github.repository }}:$GITHUB_REF_NAME-$GITHUB_SHA-$(date +%s)
