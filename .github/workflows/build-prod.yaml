@@ -1,7 +1,7 @@
 name: Build Hugo website for production environment
 
 on:
-  pull_request:
+  push:
     branches: [ main ]
 
 jobs:
