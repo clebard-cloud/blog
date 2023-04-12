@@ -1,8 +1,8 @@
 name: Build Hugo website for production environment when released
 
 on:
-  release:
-    types: [ released ]
+  push:
+    branches: [ main ]
 
 jobs:
   build:
@@ -24,4 +24,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ghcr.io/${{ github.repository }}:${{ GITHUB_REF_NAME }}
+        tags: ghcr.io/${{ github.repository }}:${{ github.ref_name }}-${{ github.sha }}-${{ github.run_number }}
