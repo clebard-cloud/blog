@@ -1,14 +1,14 @@
 name: Build Hugo website for production environment
 
 on:
-  pull_request:
+  push:
     branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      content: read
+      contents: read
       packages: write
     steps:
     - uses: actions/checkout@v3
