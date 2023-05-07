@@ -1,4 +1,4 @@
 baseURL = 'https://clebard.cloud/'
 languageCode = 'fr-fr'
 title = 'Clebard Cloud'
-theme = "PaperMod"
+theme = "papermod"
