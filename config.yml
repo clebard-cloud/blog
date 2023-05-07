@@ -1,0 +1,95 @@
+baseURL: "https://clebard.cloud/"
+title: Clebard Cloud
+paginate: 5
+theme: papermod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: Clebard Cloud
+  description: "Blog about the Clebard Cloud homelab infrastructure"
+  keywords: [Blog, Homelab, Kubernetes, Edge, Multi-Cloud]
+  author: ["Yan Imensar", "Nicolas Kirchhoffer"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  label:
+    text: "Clebard Cloud"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+
+  homeInfoParams:
+    Title: "Welcome on Clebard Cloud 🐕"
+    Content: We are 2 friends setting up and maintaining a homelab. We are passionate about subjects like Kubernetes, Edge and Multi-Cloud Computing. We follow a strict GitOps mindset, coupled with tools like Packer, Terraform and Ansible to manage the infrastructure as code.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/clebard-cloud"
+    - name: kofi
+      url: "https://ko-fi.com/clebard-cloud"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: github
+      name: github.com
+      url: https://github.com/clebard-cloud
+      weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
